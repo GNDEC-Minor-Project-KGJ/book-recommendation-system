@@ -51,12 +51,76 @@
 
 <h3 align="center"> 1.1 Objectives </h3> 
 <ul>
-    * Implementing neighborhood based collaborative filtering (KNN Cosine similarity).
+    <strong>- Implementing neighborhood based collaborative filtering (KNN Cosine similarity).</strong>
     <br>
-    * Creating a framework for recommendation engine/system.
+    <strong>- Creating a framework for recommendation engine/system.</strong>
     <br>
-    * Implementing Content-based filtering.
+    <strong>- Implementing Content-based filtering.</strong>
 </ul>       
+
+<h3 align="center"> 1.2 Technology used </h3> 
+
+<p align="justify">
+    <strong>Python</strong> – Python is an interpreted general-purpose high-level language. Created by Guido van Rossum and first released in 1991, Python’s design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+</p>
+<!--     1. **MongoDB** – MongoDB is an open-source leading NoSQL and document-based database. MongoDB is written in C++. MongoDB handles large volumes of data at high speed with a scale-out architecture. Store unstructured, semi-structured, or structured data. Enable easy updates to schemas and fields. Developer-friendly. Take full advantage of the cloud to deliver zero downtime. -->
+
+<p align="justify">
+    <strong>ML/AI</strong> – Machine learning is a subfield of artificial intelligence (AI). The goal of machine learning generally is to understand the structure of data and fit that data into models that can be understood and utilized by people.
+</p>
+
+<p align="justify">
+    <strong>Git</strong> – Git is an open-source version control system. It was designed and developed by Linus Torvalds (creator of the Linux kernel) and is the most popular version control system to date.
+</p>
+
+<br>
+<br>
+
+<!-- System Requirements -->
+<h2 align="center"> 2. System Requirements </h2> 
+
+2.1 Hardware Requirements
+- Windows 10+ / Linus / Mac Operating System
+- i5 8 Gen+
+- 4+ GB RAM
+- Dual Core processor.
+
+2.2 Software Requirements
+- Python 3.6+ installed
+- Python Packages (like NumPy, pandas, matplotlib etc.)
+- Seaborn
+
+<br>
+<br>
+
+<!-- Software Requirement Analysis -->
+
+<h2 align="center"> 3. SOFTWARE REQUIREMENT ANALYSIS </h2> 
+
+<p align="justify">
+    Most of the recommendation systems used nowadays in big companies/products are not open source. Pushing these technologies like a recommendation engine to be an open-source product creates more horizons for beginners in ML/AI and also to make optimised and accurate recommendations.
+</p>
+
+<p align="justify">
+    
+This recommendation engine can be used by system architectures to make fast and reliable integration of AI in their application/system. To create a high open-source impact, the reliable scalability design of the recommendation engine has been given proper consideration.
+</p>
+
+<p align="justify">
+    Recommender systems help the users to get personalised recommendations, make correct decisions in their online transactions, increase sales and redefine the user's web browsing experience, retain the customers, enhance their shopping experience, etc. The information overload problem is solved by search engines, but they do not provide the personalization of data. 
+</p>
+
+<p align="justify">
+    Recommendation engines provide personalization. There are different types of recommender systems such as content-based, collaborative filtering, hybrid recommender system, demographic, and keyword-based recommender systems. A variety of algorithms are used by various researchers in each type of recommendation system.
+</p>
+
+
+
+
+
+
+ 
+
 
 
    
