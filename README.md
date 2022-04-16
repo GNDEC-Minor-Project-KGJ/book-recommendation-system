@@ -21,6 +21,54 @@
     
 </p>
 
+<!-- Index -->
+<h2 align="center"> Index </h2> 
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/54165628/163686617-c1b07881-4a0f-4727-a0e0-d67549a524bd.png" width="400" />
+</p>
+
+<br>
+<br>
+
+<!-- Introduction -->
+<h2 align="center"> 1. INTRODUCTION </h2> 
+
+<p align="justify">
+     A recommendation engine based on dynamic content, further classified or categorized into content-based (milestone 1) or neighborhood-based collaborative learning (milestone 2) by using matrix factorization methods and other algorithms used in a recommendation system.
+</p>
+<p align="justify">
+    The content will be recommended on various factors and in a better / optimized  way.
+</p>
+<p align="justify">
+    A Book Recommendation Engine Based on Collaborative Filtering Concept using K Nearest Neighbors algorithm to recommend book based on the books liked by other readers and their corresponding ratings (ranking system).
+</p>
+<p align="justify">
+     Based on the reading provided by all the readers books are recommended to the users based on the users they follow and their liked books.
+</p>
+<p align="justify">
+    The Collaborative Filtering System is established using the cosine similarity relation between ratings and the recommendations with maximum match are returned.
+</p>
+
+<h3 align="center"> 1.1 Objectives </h3> 
+<ul>
+    * Implementing neighborhood based collaborative filtering (KNN Cosine similarity).
+    <br>
+    * Creating a framework for recommendation engine/system.
+    <br>
+    * Implementing Content-based filtering.
+</ul>       
+
+
+   
+
+    
+
+
+
+
+
+
+
 
 
 <!-- ## Introduction
