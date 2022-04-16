@@ -114,6 +114,32 @@ This recommendation engine can be used by system architectures to make fast and 
     Recommendation engines provide personalization. There are different types of recommender systems such as content-based, collaborative filtering, hybrid recommender system, demographic, and keyword-based recommender systems. A variety of algorithms are used by various researchers in each type of recommendation system.
 </p>
 
+<br>
+<br>
+
+<!-- Litreature -->
+<h2 align="center"> 4. LITREATURE </h2> 
+
+1. **Google Developers Community [1]:** Recommendation System by Google Developers Platforms
+   - Proposed Learnings:
+   - Describe the purpose of recommendation systems.
+   - Understand the components of a recommendation system including candidate generation, scoring, and re-ranking.
+   - Develop a deeper technical understanding of common techniques used in candidate generation.
+   - Use TensorFlow to develop models used for recommendation.
+
+
+2. **Joeran Beel et al. [2]:** [Research-paper recommender systems: a literature survey](https://d-nb.info/1147681678/34)
+    - This paper has introduced recommender systems to new research. This paper has also identified key problems which need research in recommender systems. 
+    - This paper can help Ph.D. and Master's students in choosing their area of research. The research gap is already presented in this paper to form different problems of recommender systems.
+    - The recommendation system finds its utility in major areas of web Applications. As these problems get solved more and more useful recommendation systems will become. 
+
+
+3. **Nitin Mishra et al. [3]:** [Research Problems in Recommender systems](https://iopscience.iop.org/article/10.1088/1742-6596/1717/1/012002/pdf)
+    - It is a system that helps users to choose items that they may need. A Good Recommender System saves user’s time and keeps the user engaged in the system resulting in higher revenue.
+    - Collaborative Filtering
+    - Content-based
+    - Hybrid Recommendation System
+
 
 
 
