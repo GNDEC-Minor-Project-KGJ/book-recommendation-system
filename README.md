@@ -77,7 +77,7 @@
 <br>
 
 <!-- System Requirements -->
-<h2 align="center"> 2. System Requirements </h2> 
+<h2 align="center"> 2. SYSTEM REQUIREMENTS </h2> 
 
 2.1 Hardware Requirements
 - Windows 10+ / Linus / Mac Operating System
@@ -140,8 +140,33 @@ This recommendation engine can be used by system architectures to make fast and 
     - Content-based
     - Hybrid Recommendation System
 
+<br>
+<br>
+
+<!-- CODING / CORE MODULE -->
+<h2 align="center"> 5. CODING / CORE MODULE </h2> 
+
+<br>
+<br>
+
+<!-- PERFORMANCE / OUTPUT -->
+<h2 align="center"> 6. PERFORMANCE / OUTPUT </h2> 
+
+<br>
+<br>
 
 
+<!-- Refrences -->
+<h2 align="center"> 7. REFRENCES </h2> 
+
+**[1]** Google Developers Community (2020). Recommendation System by Google developers platforms. Link - https://developers.google.com/machine-learning/recommendation
+
+**[2]** Joeran Beel, Bela Gipp, Stefan Langar, Corinna, Breitinger et al., 2016. Research-paper recommender systems: a literature survey. Journal on Digital Libraries. Link - https://d-nb.info/1147681678/3442-6596/1717/1/012002/pdf
+
+**[3]** Nitin Mishra, Saumya Chaturvedi, Aanchal Vij, Sunita Tripathi et al., 2020. Research Problems in Recommender systems - Journal of Physics: Conference Series. Link - https://iopscience.iop.org/article/10.1088/1742-6596/1717/1/012002/pdf
+
+<br>
+<br>
 
 
 
