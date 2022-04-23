@@ -79,14 +79,14 @@
 <!-- System Requirements -->
 <h2 align="center"> 2. SYSTEM REQUIREMENTS </h2>
 
-2.1 Hardware Requirements
+<h3> 2.1 Hardware Requirements </h3>
 
 - Windows 10+ / Linus / Mac Operating System
 - i5 8 Gen+
 - 4+ GB RAM
 - Dual Core processor.
 
-  2.2 Software Requirements
+<h3> 2.2 Software Requirements </h3>
 
 - Python 3.6+ installed
 - Python Packages (like NumPy, pandas, matplotlib etc.)
@@ -147,44 +147,51 @@ This recommendation engine can be used by system architectures to make fast and 
 
 <!-- CODING / CORE MODULE -->
 <h2 align="center"> 5. CODING / CORE MODULE </h2> 
-<p>
-  <h3><strong>1. KNN - Cosine Similarity</strong></h3>
-  <p>Cosine similarity is a metric used to determine how similar the documents are irrespective of their size. Cosine similarity among two objects measures the angle of cosine between the two objects. It compares two documents on a normalized scale. It can be done by finding the dot product between the two identities.</p>
-<img align="center" src="./figures/cosine-similarity-graph.png" />
-<br>
-<strong>(Fig. 1) Graph representation for cosine similarity between two vectors, v1 and v2</strong>
-<br>
-<br>
-<p>As the above diagram shows, the angle between v1 and v2
-is. Lesser the angle between the two vectors more is the
-similarity. It means if the angle between two vectors is
-small, they are almost alike each other and if the angle
-between the two vectors is large then the vectors are very
-different from each other.
-</p>
-<img align="center" src="./figures/cosine-similarity-formula.png" />
-<br>
-<strong align="center">(Fig. 2) Cosine similarity mathematical formula</strong>
-<br>
-<br>
-<h3><strong>2. Collaborative Filtering</strong></h3>
-<p>It depends upon the users who have similar interests and
-gives the result based on all the users.
-User-based: In user-based collaborative filtering, it is
-considered that a user will like the items that are liked by
-users with whom have comparable taste.
-Item-based: Item-based collaborative-filtering is
-different, it expects the users to like items that are
-related to items that he has liked earlier.
-</p>
+<p align="center">
+      <h3><strong>1. KNN - Cosine Similarity</strong></h3>
+      <p>
+        Cosine similarity is a metric used to determine how similar the documents are irrespective of their size. Cosine similarity among two objects measures         the angle of cosine between the two objects. It compares two documents on a normalized scale. It can be done by finding the dot product between the           two identities.
+      </p>
+      <img align="center" src="./figures/cosine-similarity-graph.png" />
+      <br>
+      <strong>(Fig. 1) Graph representation for cosine similarity between two vectors, v1 and v2</strong>
+      <br>
+      <br>
+      <p> 
+        As the above diagram shows, the angle between v1 and v2
+        is. Lesser the angle between the two vectors more is the
+        similarity. It means if the angle between two vectors is
+        small, they are almost alike each other and if the angle
+        between the two vectors is large then the vectors are very
+        different from each other.
+      </p>
+      <img align="center" src="./figures/cosine-similarity-formula.png" />
+      <br>
+      <strong align="center">(Fig. 2) Cosine similarity mathematical formula</strong>
+      <br>
+      <br>
+      <h3><strong>2. Collaborative Filtering</strong></h3>
+      <p>
+        It depends upon the users who have similar interests and
+        gives the result based on all the users.
+        User-based: In user-based collaborative filtering, it is
+        considered that a user will like the items that are liked by
+        users with whom have comparable taste.
+        Item-based: Item-based collaborative-filtering is
+        different, it expects the users to like items that are
+        related to items that he has liked earlier.
+      </p>
 </p>
 <h3><strong>3. Why cosine similarty metric?</strong></h3>
 <ul>
-<li>The cosine similarity is beneficial because even if the two similar data objects are far apart by the Euclidean distance because of the size, they could still have a smaller angle between them. Smaller the angle, higher the similarity.
-</li>
-<li>
-When plotted on a multi-dimensional space, the cosine similarity captures the orientation (the angle) of the data objects and not the magnitude.</li>
+    <li>
+        The cosine similarity is beneficial because even if the two similar data objects are far apart by the Euclidean distance because of the size, they could still have a smaller angle between them. Smaller the angle, higher the similarity.
+    </li>
+    <li>
+        When plotted on a multi-dimensional space, the cosine similarity captures the orientation (the angle) of the data objects and not the magnitude. 
+    </li>
 </ul>
+
 <br>
 <br>
 
