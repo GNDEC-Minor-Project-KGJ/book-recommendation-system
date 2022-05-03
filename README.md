@@ -2,11 +2,11 @@
 <div align="center"> (2022, Group 22) </div>
 
 <h2 align="center"> BOOK RECOMMENDATION ENGINE </h2> 
-<h3 align="center"> Submitted in partial fulfilment of the requirements for the award of the degree of </h3> 
+<h3 align="center"> Submitted in partial fulfilment of the requirements for the award of the degree of </h3>
 
 <h2 align="center"> Bachelor of Technology </h2> 
 <h2 align="center"> In </h2> 
-<h2 align="center"> Computer Science and Engineering </h2> 
+<h2 align="center"> Computer Science and Engineering </h2>
 
 <p align="center">
     <img src="https://i.ibb.co/8XwMN4m/13047802-10154107361704814-2752296351724321795-o.jpg" width="200" />
@@ -31,7 +31,7 @@
 <br>
 
 <!-- Introduction -->
-<h2 align="center"> 1. INTRODUCTION </h2> 
+<h2 align="center"> 1. INTRODUCTION </h2>
 
 <p align="justify">
      A recommendation engine based on dynamic content, further classified or categorized into content-based (milestone 1) or neighborhood-based collaborative learning (milestone 2) by using matrix factorization methods and other algorithms used in a recommendation system.
@@ -56,9 +56,9 @@
     <strong>- Creating a framework for recommendation engine/system.</strong>
     <br>
     <strong>- Implementing Content-based filtering.</strong>
-</ul>       
+</ul>
 
-<h3 align="center"> 1.2 Technology used </h3> 
+<h3 align="center"> 1.2 Technology used </h3>
 
 <p align="justify">
     <strong>Python</strong> – Python is an interpreted general-purpose high-level language. Created by Guido van Rossum and first released in 1991, Python’s design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
@@ -77,15 +77,17 @@
 <br>
 
 <!-- System Requirements -->
-<h2 align="center"> 2. SYSTEM REQUIREMENTS </h2> 
+<h2 align="center"> 2. SYSTEM REQUIREMENTS </h2>
 
-2.1 Hardware Requirements
+<h3> 2.1 Hardware Requirements </h3>
+
 - Windows 10+ / Linus / Mac Operating System
 - i5 8 Gen+
 - 4+ GB RAM
 - Dual Core processor.
 
-2.2 Software Requirements
+<h3> 2.2 Software Requirements </h3>
+
 - Python 3.6+ installed
 - Python Packages (like NumPy, pandas, matplotlib etc.)
 - Seaborn
@@ -95,7 +97,7 @@
 
 <!-- Software Requirement Analysis -->
 
-<h2 align="center"> 3. SOFTWARE REQUIREMENT ANALYSIS </h2> 
+<h2 align="center"> 3. SOFTWARE REQUIREMENT ANALYSIS </h2>
 
 <p align="justify">
     Most of the recommendation systems used nowadays in big companies/products are not open source. Pushing these technologies like a recommendation engine to be an open-source product creates more horizons for beginners in ML/AI and also to make optimised and accurate recommendations.
@@ -118,46 +120,102 @@ This recommendation engine can be used by system architectures to make fast and 
 <br>
 
 <!-- Litreature -->
-<h2 align="center"> 4. LITREATURE </h2> 
+<h2 align="center"> 4. LITREATURE </h2>
 
 1. **Google Developers Community [1]:** Recommendation System by Google Developers Platforms
+
    - Proposed Learnings:
    - Describe the purpose of recommendation systems.
    - Understand the components of a recommendation system including candidate generation, scoring, and re-ranking.
    - Develop a deeper technical understanding of common techniques used in candidate generation.
    - Use TensorFlow to develop models used for recommendation.
 
-
 2. **Joeran Beel et al. [2]:** [Research-paper recommender systems: a literature survey](https://d-nb.info/1147681678/34)
-    - This paper has introduced recommender systems to new research. This paper has also identified key problems which need research in recommender systems. 
-    - This paper can help Ph.D. and Master's students in choosing their area of research. The research gap is already presented in this paper to form different problems of recommender systems.
-    - The recommendation system finds its utility in major areas of web Applications. As these problems get solved more and more useful recommendation systems will become. 
 
+   - This paper has introduced recommender systems to new research. This paper has also identified key problems which need research in recommender systems.
+   - This paper can help Ph.D. and Master's students in choosing their area of research. The research gap is already presented in this paper to form different problems of recommender systems.
+   - The recommendation system finds its utility in major areas of web Applications. As these problems get solved more and more useful recommendation systems will become.
 
 3. **Nitin Mishra et al. [3]:** [Research Problems in Recommender systems](https://iopscience.iop.org/article/10.1088/1742-6596/1717/1/012002/pdf)
-    - It is a system that helps users to choose items that they may need. A Good Recommender System saves user’s time and keeps the user engaged in the system resulting in higher revenue.
-    - Collaborative Filtering
-    - Content-based
-    - Hybrid Recommendation System
+   - It is a system that helps users to choose items that they may need. A Good Recommender System saves user’s time and keeps the user engaged in the system resulting in higher revenue.
+   - Collaborative Filtering
+   - Content-based
+   - Hybrid Recommendation System
 
 <br>
 <br>
 
 <!-- CODING / CORE MODULE -->
 <h2 align="center"> 5. CODING / CORE MODULE </h2> 
+<p align="center">
+      <h3><strong>1. KNN - Cosine Similarity</strong></h3>
+      <p>
+        Cosine similarity is a metric used to determine how similar the documents are irrespective of their size. Cosine similarity among two objects measures         the angle of cosine between the two objects. It compares two documents on a normalized scale. It can be done by finding the dot product between the           two identities.
+      </p>
+      <img align="center" src="./figures/cosine-similarity-graph.png" />
+      <br>
+      <strong>(Fig. 1) Graph representation for cosine similarity between two vectors, v1 and v2</strong>
+      <br>
+      <br>
+      <p> 
+        As the above diagram shows, the angle between v1 and v2
+        is. Lesser the angle between the two vectors more is the
+        similarity. It means if the angle between two vectors is
+        small, they are almost alike each other and if the angle
+        between the two vectors is large then the vectors are very
+        different from each other.
+      </p>
+      <img align="center" src="./figures/cosine-similarity-formula.png" />
+      <br>
+      <strong align="center">(Fig. 2) Cosine similarity mathematical formula</strong>
+      <br>
+      <br>
+      <h3><strong>2. Collaborative Filtering</strong></h3>
+      <p>
+        It depends upon the users who have similar interests and
+        gives the result based on all the users.
+        User-based: In user-based collaborative filtering, it is
+        considered that a user will like the items that are liked by
+        users with whom have comparable taste.
+        Item-based: Item-based collaborative-filtering is
+        different, it expects the users to like items that are
+        related to items that he has liked earlier.
+      </p>
+</p>
+<h3><strong>3. Why cosine similarty metric?</strong></h3>
+<ul>
+    <li>
+        The cosine similarity is beneficial because even if the two similar data objects are far apart by the Euclidean distance because of the size, they could still have a smaller angle between them. Smaller the angle, higher the similarity.
+    </li>
+    <li>
+        When plotted on a multi-dimensional space, the cosine similarity captures the orientation (the angle) of the data objects and not the magnitude. 
+    </li>
+</ul>
 
 <br>
 <br>
 
 <!-- PERFORMANCE / OUTPUT -->
-<h2 align="center"> 6. PERFORMANCE / OUTPUT </h2> 
-
+<h2 align="center"> 6. PERFORMANCE / OUTPUT </h2>
+<ul>
+<li>After EDA, to improve the performance of the model on local systems, users from USA and Canada only were taken for the recommendations.
+<img align="center" src="./figures/output-us-can-filter.png" />
+<br>
+<br>
+<li>Randomly selecting a book as a query for which similar books are recommended.</li>
+<img align="center" src="./figures/output-query.png" />
 <br>
 <br>
 
+<li>With respect to the above query cosine distance is calculated and instances (books) with the least distance is concluded and decided to be recommended to the users who have showed interest in original queried book.</li>
+<img align="center" src="./figures/output-result.png" />
+</ul>
+<br>
+<br>
+<br>
 
 <!-- Refrences -->
-<h2 align="center"> 7. REFRENCES </h2> 
+<h2 align="center"> 7. REFRENCES </h2>
 
 **[1]** Google Developers Community (2020). Recommendation System by Google developers platforms. Link - https://developers.google.com/machine-learning/recommendation
 
@@ -170,23 +228,5 @@ This recommendation engine can be used by system architectures to make fast and 
 
 
 
- 
-
-
-
-   
-
-    
-
-
-
-
-
-
-
-
-
 <!-- ## Introduction
 A Book Recommendation Engine Based on Collaborative Filtering Concept using K Nearest Neighbours algorithm to recommend book based on the books liked by other readers and their corresponding ratings (ranking system). -->
-
-
