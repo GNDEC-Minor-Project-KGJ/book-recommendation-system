@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import {
   Input,
@@ -8,9 +8,6 @@ import {
   CardBody,
   CardFooter,
   Typography,
-  Select,
-  Option,
-  Radio,
 } from "@material-tailwind/react";
 import "./App.css";
 
