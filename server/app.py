@@ -4,12 +4,15 @@ import pickle
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from flask import jsonify
+from flask_cors import CORS
 
 books = pickle.load(open('models/Content-Based-Filtering/books.pkl', 'rb'))
-cosine_similarity = pickle.load(open('models/Content-Based-Filtering/cosine_similarity.pkl', 'rb'))
+cosine_similarity = pickle.load(
+    open('models/Content-Based-Filtering/cosine_similarity.pkl', 'rb'))
 
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/')
@@ -18,6 +21,7 @@ def index():
 
 
 @app.route('/content-based-filtering/recommend-by-title', methods=['GET', 'POST'])
+# @cors_origin()
 def recommendByTitle():
     if request.method == 'POST':
         data = request.get_json()
@@ -54,7 +58,8 @@ def recommendByTitle():
         movie_indices = [i[0] for i in sig]
 
         # Top 5 book recommendation
-        rec = data[['title', 'Desc', 'url', 'author']].iloc[movie_indices]
+        rec = data[['title', 'Desc', 'url',
+                    'genre', 'author']].iloc[movie_indices]
 
         # It reads the top 10 recommend book
 
@@ -69,13 +74,14 @@ def recommendByTitle():
             desc = rec['Desc'][i]
             url = rec['url'][i]
             data.append({'title': title, 'desc': desc,
-                        'url': url, 'genre': genre})
+                        'url': url, 'genre': genre, 'author': author})
             index += 1
         res = {'data': data}
         return res
 
 
 @app.route('/content-based-filtering/recommend-by-description', methods=['GET', 'POST'])
+# @cors_origin()
 def recommendByDesc():
     data = request.get_json()
     title = data['bookTitle']
@@ -112,7 +118,7 @@ def recommendByDesc():
     movie_indices = [i[0] for i in sig]
 
     # Top 10 book recommendation
-    rec = data[['title', 'url', 'Desc', 'genre']].iloc[movie_indices]
+    rec = data[['title', 'url', 'Desc', 'genre', 'author']].iloc[movie_indices]
 
     # It reads the top 10 recommend
     print("TOP 10 Recommended Books are... \n")
@@ -125,7 +131,8 @@ def recommendByDesc():
         desc = rec['Desc'][i]
         url = rec['url'][i]
         genre = rec['genre'][i]
-        data.append({'title': title, 'desc': desc, 'url': url, 'genre': genre})
+        data.append({'title': title, 'desc': desc,
+                     'url': url, 'genre': genre, 'author': author})
         index += 1
 
     res = {'data': data}
