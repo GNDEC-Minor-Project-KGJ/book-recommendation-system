@@ -126,7 +126,6 @@ def recommendByDesc():
         url = rec['url'][i]
         genre = rec['genre'][i]
         data.append({'title': title, 'desc': desc, 'url': url, 'genre': genre})
-        print(index, " ", title, " ", desc, " ", url, " ", genre)
         index += 1
 
     res = {'data': data}
