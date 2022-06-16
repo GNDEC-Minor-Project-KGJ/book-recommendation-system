@@ -12,13 +12,11 @@ import {
 import "./App.css";
 
 function App() {
-  const [bookTitle, setBookTitle] = useState(
-    "Harry Potter and the Order of the Phoenix"
-  );
+  const [bookTitle, setBookTitle] = useState("");
   const [bookGenre, setBookGenre] = useState("Non-Fiction");
   const [books, setBooks] = useState([]);
 
-  useEffect(() => {
+  const handleTitleClick = async () => {
     axios
       .post(
         "http://127.0.0.1:5000/content-based-filtering/recommend-by-title",
@@ -34,7 +32,25 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  };
+
+  const handleDescClick = async () => {
+    axios
+      .post(
+        "http://127.0.0.1:5000/content-based-filtering/recommend-by-description",
+        {
+          bookTitle,
+          bookGenre,
+        }
+      )
+      .then((response) => {
+        setBooks(response.data.data);
+        console.log(books);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <div className="App">
@@ -44,14 +60,29 @@ function App() {
           variant="static"
           label="Book Title"
           placeholder="Harry Potter"
-          value={bookTitle}
+          onChange={(e) => setBookTitle(e.target.value)}
         />
-        <Button className="mt-6" variant="gradient" size="lg">
-          Recommend
-        </Button>
+        <div className="flex w-full justify-center">
+          <Button
+            onClick={handleTitleClick}
+            className="mt-6 mx-2"
+            variant="gradient"
+            size="lg"
+          >
+            Recommend by title
+          </Button>
+          <Button
+            onClick={handleDescClick}
+            className="mt-6 mx-2"
+            variant="gradient"
+            size="lg"
+          >
+            Recommend by description
+          </Button>
+        </div>
       </div>
       <div className="m-6 p-6 flex flex-row flex-basis-auto justify-center items-center flex-wrap">
-        {books.map((book) => (
+        {books && books.map((book) => (
           <Card className="w-96 m-6">
             <CardHeader color="blue" className="relative h-56">
               <img
