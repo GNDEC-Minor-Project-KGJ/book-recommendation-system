@@ -48,7 +48,7 @@ def recommendByTitle():
         sig = sorted(sig, key=lambda x: x[1], reverse=True)
 
         # Scores of the 5 most similar books
-        sig = sig[1:11]
+        sig = sig[1:7]
 
         # Book indicies
         movie_indices = [i[0] for i in sig]
@@ -106,7 +106,7 @@ def recommendByDesc():
     sig = sorted(sig, key=lambda x: x[1], reverse=True)
 
     # Scores of the 10 most similar books
-    sig = sig[1:11]
+    sig = sig[1:7]
 
     # Book indicies
     movie_indices = [i[0] for i in sig]
