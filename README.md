@@ -1,4 +1,4 @@
-<h1 align="center"> Minor Project Mid Term Progress Report </h1>
+<h1 align="center"> Minor Project Final Progress Report </h1>
 <div align="center"> (2022, Group 22) </div>
 
 <h2 align="center"> BOOK RECOMMENDATION ENGINE </h2> 
@@ -14,8 +14,8 @@
 
 <p align="center">
     <h2 align="center"> Submiited By :- </h2>
-    <h3 align="center"> Konark Lohat (1905801) </h3>
     <h3 align="center"> Gautam Jain (1905785) </h3>
+    <h3 align="center"> Konark Lohat (1905801) </h3>
     <h3 align="center"> Jaskamal Singh (1905006) </h3>
     <h3 align="center"> <strong> Guru Nanak Dev Engineering College Ludhiana - 141006 </strong> </h3>
     
